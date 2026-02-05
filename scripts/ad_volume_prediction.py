@@ -143,7 +143,7 @@ class AdVolumePredictor:
             logger.info(f"\nTrend: STABLE")
 
         # Visualizations
-        viz_dir = Path('visualizations')
+        viz_dir = Path('../visualizations')
         viz_dir.mkdir(exist_ok=True)
 
         # Plot 1: Daily ad volume over time

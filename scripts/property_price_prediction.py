@@ -407,7 +407,7 @@ class PropertyPricePrediction:
         logger.info("="*80)
 
         df = self.cleaned_data
-        viz_dir = Path('visualizations')
+        viz_dir = Path('../visualizations')
         viz_dir.mkdir(exist_ok=True)
 
         # Set style
@@ -773,8 +773,8 @@ def main():
 
     # Initialize system
     predictor = PropertyPricePrediction(
-        data_dir='data/raw',
-        checkpoint_dir='checkpoints'
+        data_dir='../data/raw',
+        checkpoint_dir='../checkpoints'
     )
 
     # Run complete pipeline

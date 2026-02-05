@@ -13,7 +13,6 @@ Author: Claude AI
 Date: 2025-11-18
 """
 
-import os
 import sys
 from pathlib import Path
 
@@ -91,7 +90,7 @@ def run_complete_pipeline():
     print("="*80)
 
     try:
-        from property_price_prediction import PropertyPricePrediction
+        from scripts.property_price_prediction import PropertyPricePrediction
 
         predictor = PropertyPricePrediction()
         predictor.run_complete_pipeline(target_type='sale')
@@ -116,7 +115,7 @@ def run_basic_models():
     print("="*80)
 
     try:
-        from property_price_prediction import PropertyPricePrediction
+        from scripts.property_price_prediction import PropertyPricePrediction
 
         predictor = PropertyPricePrediction()
         predictor.load_data()

@@ -61,7 +61,7 @@ def generate_sample_data(num_records=5000, num_files=3):
     records_per_file = num_records // num_files
 
     # Create output directory
-    output_dir = Path('data/raw')
+    output_dir = Path('../data/raw')
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Generate data for each month
